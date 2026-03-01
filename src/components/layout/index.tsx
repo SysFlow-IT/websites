@@ -94,16 +94,16 @@ export const Navbar: React.FC<NavbarProps> = ({ className = "" }) => {
                 }`}
             >
               <Link
-                to="/szkolenie"
+                to={`/${content.NAV.URLS.TRAINING}`}
                 onClick={handleMobileClose}
-                className={isActive('szkolenie') ? styles.active : ""}
+                className={isActive(content.NAV.URLS.TRAINING) ? styles.active : ""}
               >
                 {content.NAV.TRAINING}
               </Link>
               <Link
-                to="/wdrozenia"
+                to={`/${content.NAV.URLS.IMPLEMENTATIONS}`}
                 onClick={handleMobileClose}
-                className={isActive('wdrozenia') ? styles.active : ""}
+                className={isActive(content.NAV.URLS.IMPLEMENTATIONS) ? styles.active : ""}
               >
                 {content.NAV.IMPLEMENTATIONS}
               </Link>
@@ -157,16 +157,18 @@ export const Footer: React.FC = () => {
             </div>
           </div>
           <div className={styles.footerRight}>
-            <div className={styles.footerLegal}>
-              <Link to="/polityka-prywatnosci" className={styles.footerLegalLink}>
-                Polityka prywatności
-              </Link>
-              <Link to="/regulamin" className={styles.footerLegalLink}>
-                Regulamin
-              </Link>
-            </div>
+            {content.FOOTER.PRIVACY_POLICY && content.FOOTER.PRIVACY_URL && content.FOOTER.TERMS && content.FOOTER.TERMS_URL && (
+              <div className={styles.footerLegal}>
+                <Link to={content.FOOTER.PRIVACY_URL} className={styles.footerLegalLink}>
+                  {content.FOOTER.PRIVACY_POLICY}
+                </Link>
+                <Link to={content.FOOTER.TERMS_URL} className={styles.footerLegalLink}>
+                  {content.FOOTER.TERMS}
+                </Link>
+              </div>
+            )}
             <p className={styles.footerText}>
-              © {new Date().getFullYear()} SysFlow. Wszelkie prawa zastrzeżone.
+              © {new Date().getFullYear()} SysFlow. {content.FOOTER.COPYRIGHT}
             </p>
           </div>
         </div>

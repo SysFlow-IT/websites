@@ -215,7 +215,7 @@ export const HomePage: React.FC = () => {
           <h3 className={styles.heading}>{content.HOME_PAGE.SOLUTIONS.SUBHEADING}</h3>
           <div className={styles.cards}>
             <Link
-              to="/szkolenie"
+              to={content.HOME_PAGE.SOLUTIONS.CARDS.TRAINING.URL}
               className={`${styles.card} ${isVisible ? styles.cardVisible : ""}`}
             >
               <div className={styles.cardImage}>
@@ -238,7 +238,7 @@ export const HomePage: React.FC = () => {
               </div>
             </Link>
             <Link
-              to="/wdrozenia"
+              to={content.HOME_PAGE.SOLUTIONS.CARDS.FLOWONE.URL}
               className={`${styles.card} ${isVisible ? styles.cardVisible : ""}`}
               style={{ animationDelay: "0.2s" }}
             >
@@ -294,9 +294,9 @@ export const HomePage: React.FC = () => {
                   className={`${styles.primaryAction} ${submitStatus === "success" ? styles.success : ""} ${submitStatus === "error" ? styles.error : ""}`}
                   disabled={submitStatus === "loading"}
                 >
-                  {submitStatus === "loading" ? "Zapisuję..." :
-                   submitStatus === "success" ? "✓ Zapisano!" :
-                   submitStatus === "error" ? "Błąd — spróbuj ponownie" :
+                  {submitStatus === "loading" ? content.NEWSLETTER_STATUS.LOADING :
+                   submitStatus === "success" ? content.NEWSLETTER_STATUS.SUCCESS :
+                   submitStatus === "error" ? content.NEWSLETTER_STATUS.ERROR :
                    content.HOME_PAGE.NEWSLETTER.BUTTON}
                 </button>
               </form>
@@ -342,7 +342,7 @@ export const HomePage: React.FC = () => {
           rel="noopener noreferrer"
           className={`${styles.primaryAction} ${styles.btnFull}`}
         >
-          Bezpłatna konsultacja →
+          {content.MOBILE_CTA}
         </a>
       </div>
 

@@ -1,4 +1,5 @@
 import React from "react";
+import { useContent } from "../../hooks/useContent";
 import styles from "./TrustedBy.module.css";
 
 interface Client {
@@ -31,10 +32,12 @@ const CLIENTS: Client[] = [
 ];
 
 export const TrustedBy: React.FC = () => {
+  const { content } = useContent();
+
   return (
     <section className={styles.section}>
       <div className="container">
-        <h2 className={styles.title}>Zaufali nam</h2>
+        <h2 className={styles.title}>{content.TRUSTED_BY.TITLE}</h2>
         <div className={styles.grid}>
           {CLIENTS.map((client, index) => (
             <a
