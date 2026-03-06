@@ -16,7 +16,6 @@ export interface ProcessStep {
   image: string;
   title: string;
   description: string;
-  imageContain?: boolean;
 }
 
 export interface AutomationArea {

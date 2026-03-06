@@ -108,14 +108,12 @@ const en: SiteContent = {
       title: "Process Automation",
       description:
         "Implementation of automation according to priorities – starting with actions bringing the most value added.",
-      imageContain: true,
     },
     {
       image: `${import.meta.env.BASE_URL}image/banner-improvement.png`,
       title: "Iterative Improvement",
       description:
         "Continuous system refinement based on feedback until it reaches full functionality meeting company needs.",
-      imageContain: true,
     },
     {
       image: `${import.meta.env.BASE_URL}image/banner-knowledge.png`,
@@ -189,15 +187,13 @@ const en: SiteContent = {
       icon: "🚀",
       title: "Latest Technologies",
       description: "AI, Low-Code/No-Code",
-      image:
-        "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&h=600&fit=crop",
+      image: `${import.meta.env.BASE_URL}image/banner-automation.png`,
     },
     {
       icon: "🔄",
       title: "Iterative Approach",
       description: "system grows with the company",
-      image:
-        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
+      image: `${import.meta.env.BASE_URL}image/banner-improvement.png`,
     },
   ],
 

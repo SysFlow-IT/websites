@@ -108,14 +108,12 @@ const pl: SiteContent = {
       title: "Automatyzacja Procesów",
       description:
         "Implementacja automatyzacji według priorytetów – zaczynamy od działań przynoszących największą wartość dodaną.",
-      imageContain: true,
     },
     {
       image: `${import.meta.env.BASE_URL}image/banner-improvement.png`,
       title: "Iteracyjne Doskonalenie",
       description:
         "Ciągłe udoskonalanie systemu na podstawie feedbacku, aż osiągnie pełną funkcjonalność odpowiadającą potrzebom firmy.",
-      imageContain: true,
     },
     {
       image: `${import.meta.env.BASE_URL}image/banner-knowledge.png`,
@@ -189,15 +187,13 @@ const pl: SiteContent = {
       icon: "🚀",
       title: "Najnowsze technologie",
       description: "AI, Low-Code/No-Code",
-      image:
-        "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&h=600&fit=crop",
+      image: `${import.meta.env.BASE_URL}image/banner-automation.png`,
     },
     {
       icon: "🔄",
       title: "Iteracyjne podejście",
       description: "system rośnie razem z firmą",
-      image:
-        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
+      image: `${import.meta.env.BASE_URL}image/banner-improvement.png`,
     },
   ],
 
