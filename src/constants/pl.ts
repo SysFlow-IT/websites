@@ -173,15 +173,13 @@ const pl: SiteContent = {
       icon: "💼",
       title: "Praktyczne doświadczenie",
       description: "wdrażamy działające systemy, które ułatwiają życie",
-      image:
-        "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop",
+      image: `${import.meta.env.BASE_URL}image/banner-experience.png`,
     },
     {
       icon: "🎓",
       title: "Edukacja",
       description: "nie tylko wdrażamy, ale uczymy",
-      image:
-        "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&h=600&fit=crop",
+      image: `${import.meta.env.BASE_URL}image/banner-education.png`,
     },
     {
       icon: "🚀",
