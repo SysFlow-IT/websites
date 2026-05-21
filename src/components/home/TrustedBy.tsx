@@ -19,16 +19,6 @@ const CLIENTS: Client[] = [
     logo: `${import.meta.env.BASE_URL}image/clients/cookie3.svg`,
     url: "https://www.cookie3.com/",
   },
-  {
-    name: "Independent Trader",
-    logo: `${import.meta.env.BASE_URL}image/clients/independent-trader.svg`,
-    url: "https://independenttrader.pl/",
-  },
-  {
-    name: "Dom na Majorce",
-    logo: `${import.meta.env.BASE_URL}image/clients/domnamajorce.svg`,
-    url: "https://domnamajorce.pl/",
-  },
 ];
 
 export const TrustedBy: React.FC = () => {
